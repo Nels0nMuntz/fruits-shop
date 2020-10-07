@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fruits</title>
+  <script src="https://kit.fontawesome.com/05473ec6e6.js" crossorigin="anonymous"></script>
+  <!-- Aos Style -->
+  <link rel="stylesheet" href="./css/aos.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+
+  <header id="header" class="header">
+    <div class="header__inner">
+      <div class="header__content">
+        <div class="header__logo logo">
+          <img src="./img/logo.png" alt="logo">
+          <div class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#sets" class="nav__link anchor">Выбрать фрукты</a></li>
+            <li class="nav__item"><a href="#how-to" class="nav__link anchor">Как это работает?</a></li>
+            <li class="nav__item"><a href="#payment" class="nav__link anchor">Оплата и доставка</a></li>
+            <li class="nav__item"><a href="#comments" class="nav__link anchor">Отзывы</a></li>
+            <li class="nav__item"><a href="#questions" class="nav__link anchor">Частые вопросы</a></li>
+          </ul>
+        </nav>
+        <div class="header__contacts contacts">
+          <div class="contacts__item">
+            <a class="contacts__phone" href="tel:+7(968)5190561"><strong>+7 (968) 519 05 61</strong></a>
+            <div class="contacts__descr">(Telegram/WhatsApp)</div>
+          </div>
+          <div class="contacts__item">
+            <ul class="contacts__social-links social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path
+                      d="M47.761,24c0,13.121-10.639,23.76-23.76,23.76C10.878,47.76,0.239,37.121,0.239,24c0-13.123,10.639-23.76,23.762-23.76 C37.122,0.24,47.761,10.877,47.761,24 M35.259,28.999c-2.621-2.433-2.271-2.041,0.89-6.25c1.923-2.562,2.696-4.126,2.45-4.796 c-0.227-0.639-1.64-0.469-1.64-0.469l-4.71,0.029c0,0-0.351-0.048-0.609,0.106c-0.249,0.151-0.414,0.505-0.414,0.505 s-0.742,1.982-1.734,3.669c-2.094,3.559-2.935,3.747-3.277,3.524c-0.796-0.516-0.597-2.068-0.597-3.171 c0-3.449,0.522-4.887-1.02-5.259c-0.511-0.124-0.887-0.205-2.195-0.219c-1.678-0.016-3.101,0.007-3.904,0.398 c-0.536,0.263-0.949,0.847-0.697,0.88c0.31,0.041,1.016,0.192,1.388,0.699c0.484,0.656,0.464,2.131,0.464,2.131 s0.282,4.056-0.646,4.561c-0.632,0.347-1.503-0.36-3.37-3.588c-0.958-1.652-1.68-3.481-1.68-3.481s-0.14-0.344-0.392-0.527 c-0.299-0.222-0.722-0.298-0.722-0.298l-4.469,0.018c0,0-0.674-0.003-0.919,0.289c-0.219,0.259-0.018,0.752-0.018,0.752 s3.499,8.104,7.463,12.23c3.638,3.784,7.764,3.36,7.764,3.36h1.867c0,0,0.566,0.113,0.854-0.189 c0.265-0.288,0.256-0.646,0.256-0.646s-0.034-2.512,1.129-2.883c1.15-0.36,2.624,2.429,4.188,3.497 c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.281,32.451,37.763,31.321,35.259,28.999">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 30 30" xml:space="preserve">
+                    <desc>Instagram</desc>
+                    <path
+                      d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z">
+                    </path>
+                    <path
+                      d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z">
+                    </path>
+                    <path
+                      d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 60 60"
+                    xml:space="preserve">
+                    <desc>Telegram</desc>
+                    <path
+                      d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z">
+                    </path>
+                    <path d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__item">
+            <a href="#sets" class="main-btn order-btn">Заказать</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-menu">
+        <nav class="popup-menu__section">
+          <ul class="nav__list">
+            <li class="popup-menu__item"><a href="#sets" class="nav__link anchor">Выбрать фрукты</a></li>
+            <li class="popup-menu__item"><a href="#how-to" class="nav__link anchor">Как это работает?</a></li>
+            <li class="popup-menu__item"><a href="#payment" class="nav__link anchor">Оплата и доставка</a></li>
+            <li class="popup-menu__item"><a href="#comments" class="nav__link anchor">Отзывы</a></li>
+            <li class="popup-menu__item"><a href="#questions" class="nav__link anchor">Частые вопросы</a></li>
+            <li class="popup-menu__item"><a href="#" class="nav__link">Написать нам в WhatsApp</a></li>
+            <li class="popup-menu__item"><a class="nav__link" href="tel:+7(968)5190561">Позвонить</a></li>
+          </ul>
+        </nav>
+        <div class="popup-menu__section">
+          <a class="contacts__phone" href="tel:+7(968)5190561"><strong>+7 (968) 519 05 61</strong></a>
+          <div class="contacts__descr">(Telegram/WhatsApp)</div>
+        </div>
+        <div class="popup-menu__section">
+          <ul class="contacts__social-links social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                  viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path
+                    d="M47.761,24c0,13.121-10.639,23.76-23.76,23.76C10.878,47.76,0.239,37.121,0.239,24c0-13.123,10.639-23.76,23.762-23.76 C37.122,0.24,47.761,10.877,47.761,24 M35.259,28.999c-2.621-2.433-2.271-2.041,0.89-6.25c1.923-2.562,2.696-4.126,2.45-4.796 c-0.227-0.639-1.64-0.469-1.64-0.469l-4.71,0.029c0,0-0.351-0.048-0.609,0.106c-0.249,0.151-0.414,0.505-0.414,0.505 s-0.742,1.982-1.734,3.669c-2.094,3.559-2.935,3.747-3.277,3.524c-0.796-0.516-0.597-2.068-0.597-3.171 c0-3.449,0.522-4.887-1.02-5.259c-0.511-0.124-0.887-0.205-2.195-0.219c-1.678-0.016-3.101,0.007-3.904,0.398 c-0.536,0.263-0.949,0.847-0.697,0.88c0.31,0.041,1.016,0.192,1.388,0.699c0.484,0.656,0.464,2.131,0.464,2.131 s0.282,4.056-0.646,4.561c-0.632,0.347-1.503-0.36-3.37-3.588c-0.958-1.652-1.68-3.481-1.68-3.481s-0.14-0.344-0.392-0.527 c-0.299-0.222-0.722-0.298-0.722-0.298l-4.469,0.018c0,0-0.674-0.003-0.919,0.289c-0.219,0.259-0.018,0.752-0.018,0.752 s3.499,8.104,7.463,12.23c3.638,3.784,7.764,3.36,7.764,3.36h1.867c0,0,0.566,0.113,0.854-0.189 c0.265-0.288,0.256-0.646,0.256-0.646s-0.034-2.512,1.129-2.883c1.15-0.36,2.624,2.429,4.188,3.497 c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.281,32.451,37.763,31.321,35.259,28.999">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                  viewBox="0 0 30 30" xml:space="preserve">
+                  <desc>Instagram</desc>
+                  <path
+                    d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z">
+                  </path>
+                  <path
+                    d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z">
+                  </path>
+                  <path
+                    d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 60 60"
+                  xml:space="preserve">
+                  <desc>Telegram</desc>
+                  <path
+                    d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z">
+                  </path>
+                  <path d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+  </header>
+
+  <main>
+    <section class="banner"
+      style="background-image: url(https://thumb.tildacdn.com/tild6239-3930-4039-b332-333465653237/-/format/webp/_____v3.jpg);">
+      <div class="banner__container">
+        <div class="banner__wrap">
+          <h1 class="banner__tile">экзотичиские фрукты с доставкой на дом</h1>
+          <p class="banner__descr">Насладитесь вкусом свежих и сочных экзотических фруктов,
+            которые мы каждую неделю привозим специально для вас
+            из разных уголков мира!</p>
+          <a href="#sets" class="main-btn banner-btn">выбрать фрукты</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sets" class="sets">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">Выбор готового набора</h2>
+          <p class="section-descr">
+            Готовый набор – идеальный вариант для подарка или первого знакомства с экзотическими фруктами.
+            Выберите набор, который вам по душе или перейдите в раздел фруктов на развес.
+          </p>
+          <div class="sets__center">
+            <!-- <article class="sets__item item-sets">
+              <div class="item-sets__photo">
+                <img src="./img/Pack_3.jpg" alt="pack">
+              </div>
+              <h3 class="item-title">Большая коробка</h3>
+              <div class="item-descr item-descr-center">16 видов фруктов, 6,5 кг</div>
+              <div class="item-price">7 290 руб.</div>
+              <div class="item-button">
+                <a href="#" class="main-btn">Выбрать набор</a>
+                <a href="#" class="info-btn">Состав набора</a>
+              </div>
+            </article>
+            <article class="sets__item item-sets">
+              <div class="item-sets__photo">
+                <img src="./img/Pack_2.jpg" alt="pack">
+              </div>
+              <h3 class="item-title">Средняя коробка</h3>
+              <div class="item-descr item-descr-center">11 видов фруктов, 5 кг</div>
+              <div class="item-price">4 690 руб.</div>
+              <div class="item-button">
+                <a href="#" class="main-btn">Выбрать набор</a>
+                <a href="#" class="info-btn">Состав набора</a>
+              </div>
+            </article>
+            <article class="sets__item item-sets">
+              <div class="item-sets__photo">
+                <img src="./img/Pack_1.jpg" alt="pack">
+              </div>
+              <h3 class="item-title">Маленькая коробка</h3>
+              <div class="item-descr item-descr-center">8 видов фруктов, 3 кг</div>
+              <div class="item-price">3 690 руб.</div>
+              <div class="item-button">
+                <a href="#" class="main-btn">Выбрать набор</a>
+                <a href="#" class="info-btn">Состав набора</a>
+              </div>
+            </article>
+            <article class="sets__item item-sets">
+              <div class="item-sets__photo">
+                <img src="./img/Pack_4.png" alt="pack">
+              </div>
+              <h3 class="item-title">Офисная коробка</h3>
+              <div class="item-descr item-descr-center">6 видов фруктов, 1,5 кг</div>
+              <div class="item-price">2000 руб.</div>
+              <div class="item-button">
+                <a href="#" class="main-btn">Выбрать набор</a>
+                <a href="#" class="info-btn">Состав набора</a>
+              </div>
+            </article> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="goods">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">Экзотические фрукты на развес</h2>
+          <p class="section-descr">
+            <span>Если вы уже являетесь знатоком экзотических фруктов, этот раздел – для вас.</span>
+            <span>Соберите набор из любимых плодов для себя или в подарок.</span>
+          </p>
+          <div class="goods__center goods__center-fruits">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="goods">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">Экзотические напитки</h2>
+          <p class="section-descr">
+            <span>Освежающий манговый сок или кокосовая вода? А может и то и другое?</span>
+            <span>Этот раздел утоляет жажду и возвращает на солнечный пляж!</span>
+          </p>
+          <div class="goods__center goods__center-drinks">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="goods">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">Органическое кокосовое масло</h2>
+          <p class="section-descr">
+            <span>Xотите омолодить кожу лица и сделать волосы здоровыми и блестящими?</span>
+            <span>Натуральное кокосовое масло к вашим услугам :)</span>
+          </p>
+          <div class="goods__center goods__center-oil">
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="information">
+      <div class="container">
+        <div class="section-content">
+          <div class="information__order-bg">
+            <div class="information__icon-arrow">
+              <svg x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"
+                style="enable-background:new 0 0 24 24;">
+                <circle style="fill:#d62240;" cx="12" cy="12" r="12"></circle>
+                <g>
+                  <g>
+                    <path style="fill: #fff;"
+                      d="M15.5,11.122c-1.026-1.036-2.007-2.026-2.986-3.017c-0.385-0.39-0.413-0.895-0.075-1.251 c0.361-0.381,0.886-0.371,1.296,0.037c1.136,1.131,2.267,2.266,3.401,3.399c0.346,0.346,0.694,0.69,1.037,1.038 c0.425,0.43,0.431,0.921,0.01,1.343c-1.462,1.466-2.926,2.931-4.392,4.393c-0.384,0.383-0.898,0.398-1.253,0.053 c-0.366-0.357-0.356-0.877,0.038-1.273c0.925-0.929,1.855-1.854,2.786-2.778c0.051-0.051,0.122-0.081,0.183-0.121 c-0.014-0.035-0.027-0.069-0.041-0.104c-0.115,0-0.229,0-0.344,0c-2.841,0-5.683,0-8.524-0.001c-0.135,0-0.271-0.001-0.405-0.018 c-0.438-0.056-0.738-0.419-0.726-0.868c0.012-0.442,0.34-0.795,0.776-0.829c0.114-0.009,0.229-0.004,0.343-0.004 c2.821,0,5.641,0,8.462,0C15.208,11.122,15.33,11.122,15.5,11.122z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="information__order">Для оформления заказа с фруктами на развес, пожалуйста, добавьте фрукты в
+              корзину или свяжитесь с оператором нашего call-центра по телефону, SMS/WhatsApp/Telegram: <span>+ 7 (968)
+                615 09 15</span></div>
+          </div>
+          <div class="information__promise promise">
+            <span class="line-top">
+              <hr>
+              <span class="uptitle">
+                <pre>и кстати...</pre></span>
+            </span>
+
+            <div class="promise__text">
+              <p>Мы обещаем, что вернем деньги, если вас не устроит качество фруктов.</p>
+              <p>Так что смелее :)</p>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-to" class="how-to" style="background-image: url(./img/bg_2.jpg);">
+      <div class="section-content">
+        <div class="how-to__content">
+          <h2 class="how-to__title">Как это работает</р>
+            <ul class="how-to__list">
+              <li class="how-to__item">
+                <img class="how-to__img" src="./img/bascet.png" alt="bascet">
+                <h3 class="how-to__subtitle">Вы делаете заказ</h3>
+                <div class="how-to__text">Вы оформляете заказ на нашем сайте или по телефону с помощью оператора
+                  call-центра</div>
+              </li>
+              <li class="how-to__item">
+                <img class="how-to__img" src="./img/plane.png" alt="bascet">
+                <h3 class="how-to__subtitle">Мы привозим
+                  фрукты в Россию</h3>
+                <div class="how-to__text">Дважды в неделю мы привозим
+                  партию свежих заморских фруктов по списку вашего заказа</div>
+              </li>
+              <li class="how-to__item">
+                <img class="how-to__img" src="./img/box.png" alt="bascet">
+                <h3 class="how-to__subtitle">Формируем
+                  вашу коробку</h3>
+                <div class="how-to__text">Мы тщательно отбираем фрукты
+                  и формируем коробки, оставляя для вас только самые спелые и красивые плоды</div>
+              </li>
+              <li class="how-to__item">
+                <img class="how-to__img" src="./img/consumer.png" alt="bascet">
+                <h3 class="how-to__subtitle">Доставляем
+                  на дом или в офис</h3>
+                <div class="how-to__text">В удобное вам время
+                  курьер доставляет фрукты
+                  прямо до ваших дверей</div>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="payment" class="payment">
+      <div class="section-content">
+        <h2 class="section-title">Оплата и доставка</h2>
+        <div class="payment-container">
+          <div class="payment__part">
+            <ul class="payment__list">
+              <li class="payment__item item-payment">
+                <h3 class="item-payment__title">Бесплатная доставка
+                  по Москве</h3>
+                <p class="item-payment__descr">При заказе фруктов от 3 500 руб. доставка
+                  по Москве – БЕСПЛАТНО. Доставка по МО –
+                  25 руб./км за пределами МКАД.</p>
+                <p class="item-payment__descr_details"><small>При заказе до 3 500 руб. доставка по Москве – 350
+                    руб.</small></p>
+                <p class="item-payment__descr_details"><small>Доставка по МО: 350 руб. + 25 руб./км. за пределами
+                    МКАД.</small></p>
+              </li>
+              <li class="payment__item item-payment">
+                <h3 class="item-payment__title">Поставка – каждые 3 дня</h3>
+                <p class="item-payment__descr">Наши фрукты прилетают в Россию дважды в неделю прямиком с солнечных
+                  плантаций.
+                  Мы заботимся о том, чтобы к вам на стол попадали только самые свежие плоды, поэтому после оформления
+                  заказа мы уточним для вас ближайший возможный день доставки.</p>
+              </li>
+              <li class="payment__item item-payment">
+                <h3 class="item-payment__title">Оплата при получении</h3>
+                <p class="item-payment__descr">Оплатить покупку можно непосредственно при получении товара,
+                  предварительно оценив состав фруктов и их свежесть. Мы ручаемся за качество!</p>
+              </li>
+              <li class="payment__item item-payment">
+                <h3 class="item-payment__title">Удобная форма расчета</h3>
+                <p class="item-payment__descr">За привезенный заказ вы можете рассчитаться наличными курьеру или с
+                  помощью банковской карты.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="payment__part">
+            <div class="payment__img">
+              <img src="./img/phone-screen.jpg" alt="phone">
+            </div>
+          </div>
+        </div>
+        <a href="#sets" class="main-btn banner-btn">выбрать фрукты</a>
+      </div>
+    </section>
+
+    <section id="comments" class="comments">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">Отзывы наших клиентов</h2>
+          <ul class="comments__list">
+            <li class="comments__item">
+              <div class="comments__photo">
+                <img src="./img/comment_1.jpg" alt="comment">
+              </div>
+              <div class="comments__author">Крис</div>
+              <div class="comments__content">
+                Заказала в пятницу вечером, и уже в субботу днем курьер привез коробку. Фрукты очень вкусные, а самое
+                главное - созревшие, тот случай когда и качество цена на высшем уровне!
+              </div>
+            </li>
+            <li class="comments__item">
+              <div class="comments__photo">
+                <img src="./img/comment_2.jpg" alt="comment">
+              </div>
+              <div class="comments__author">
+                Анжелика Вороненская </div>
+              <div class="comments__content">
+                Хочу оставить свой отзыв! Ребенку 6 лет, наши яблоки и груши кушает плохо, не любит совсем( подруга
+                посоветовала этот сайт, заказала большую коробку фруктов, на всю семью, кушали три дня! Сын с
+                удовольствием пробовал и осваивал фрукт за фруктом! Остались очень довольны, и вкусно и полезно!
+                РЕКОМЕНДУЮ
+              </div>
+            </li>
+            <li class="comments__item">
+              <div class="comments__photo">
+                <img src="./img/comment_3.jpg" alt="comment">
+              </div>
+              <div class="comments__author">Дан Сараев</div>
+              <div class="comments__content">
+                Парни – красавцы. Очень добротный сервис.
+                От оформления заказа до доставки – отличные впечатления. Желаю роста и успехов!
+              </div>
+            </li>
+          </ul>
+          <div class="comment__social">
+            <p class="comments__subtitle">И Еще больше отзывов в наших СООБЩЕСТВАХ: </p>
+            <div class="comments__links">
+              <div class="comments__social-link">
+                <a href="https://vk.com/topic-135298304_34957875" target="_blank">
+                  <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
+                    viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <desc>VK</desc>
+                    <path style="fill:#597da3;"
+                      d="M47.761,24c0,13.121-10.639,23.76-23.76,23.76C10.878,47.76,0.239,37.121,0.239,24c0-13.123,10.639-23.76,23.762-23.76C37.122,0.24,47.761,10.877,47.761,24 M35.259,28.999c-2.621-2.433-2.271-2.041,0.89-6.25c1.923-2.562,2.696-4.126,2.45-4.796c-0.227-0.639-1.64-0.469-1.64-0.469l-4.71,0.029c0,0-0.351-0.048-0.609,0.106c-0.249,0.151-0.414,0.505-0.414,0.505s-0.742,1.982-1.734,3.669c-2.094,3.559-2.935,3.747-3.277,3.524c-0.796-0.516-0.597-2.068-0.597-3.171c0-3.449,0.522-4.887-1.02-5.259c-0.511-0.124-0.887-0.205-2.195-0.219c-1.678-0.016-3.101,0.007-3.904,0.398c-0.536,0.263-0.949,0.847-0.697,0.88c0.31,0.041,1.016,0.192,1.388,0.699c0.484,0.656,0.464,2.131,0.464,2.131s0.282,4.056-0.646,4.561c-0.632,0.347-1.503-0.36-3.37-3.588c-0.958-1.652-1.68-3.481-1.68-3.481s-0.14-0.344-0.392-0.527c-0.299-0.222-0.722-0.298-0.722-0.298l-4.469,0.018c0,0-0.674-0.003-0.919,0.289c-0.219,0.259-0.018,0.752-0.018,0.752s3.499,8.104,7.573,12.23c3.638,3.784,7.764,3.36,7.764,3.36h1.867c0,0,0.566,0.113,0.854-0.189c0.265-0.288,0.256-0.646,0.256-0.646s-0.034-2.512,1.129-2.883c1.15-0.36,2.624,2.429,4.188,3.497c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.281,32.451,37.763,31.321,35.259,28.999">
+                    </path>
+                  </svg> </a>
+              </div>
+              <div class="comments__social-link">
+                <a href="https://www.instagram.com/ji_fruits/" target="_blank">
+                  <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 30 30"
+                    xml:space="preserve">
+                    <desc>Instagram</desc>
+                    <path style="fill:#597da3;"
+                      d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z">
+                    </path>
+                    <path style="fill:#597da3;"
+                      d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z">
+                    </path>
+                    <path style="fill:#597da3;"
+                      d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z">
+                    </path>
+                  </svg> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="leave-comment">
+      <div class="leave-comment__info">
+        <p>Оставьте отзыв о нашей работе и получите</p>
+        <p>7% скидку к следующему заказу!</p>
+      </div>
+      <a class="leave-comment__btn" href="#">Написать отзыв</a>
+    </section>
+
+    <section id="questions" class="questions">
+      <div class="questions-container">
+        <div class="section-content">
+          <h2 class="section-title">Отзывы наших клиентов</h2>
+          <div class="questions__item questions__question">
+            <p>Вопрос:</p>
+            <p>Насколько стабильно качество ваших фруктов? Может ли быть такое, что экзотические фрукты, приезжающие из
+              Тайланда, потеряют свою свежесть пока доедут до меня?</p>
+          </div>
+          <div class="questions__item questions__answer">
+            <p>Ответ:</p>
+            <p>
+              Во-первых, важно понимать, что тайские фрукты летят к нам самолетом: сегодня их собрали и привезли на базу
+              в Тайланде, завтра они – на нашем складе в Москве, а еще через несколько часов – на вашем столе.
+              Во-вторых, каждый вид фруктов из каждой партии мы лично проверяем на свежесть и спелость – если качество
+              каких-то плодов нас не устраивает, мы сообщаем вам об этом и предлагаем альтернативы :)</p>
+          </div>
+
+          <div class="questions__item questions__question">
+            <p>Вопрос:</p>
+            <p>
+              Могу ли я сделать сюрприз – заказать фрукты с доставкой для другого человека?</p>
+          </div>
+          <div class="questions__item questions__answer">
+            <p>Ответ:</p>
+            <p>
+              Да, конечно! При заказе просто сообщите, что собираетесь купить фрукты в подарок, и оператор нашего
+              call-центра уточнит все детали. Мы можем вложить именную открытку в коробку с фруктами или оформить
+              сюрприз в виде красивой корзины. </p>
+          </div>
+
+          <div class="questions__item questions__question">
+            <p>Вопрос:</p>
+            <p>
+              Есть ли минимальная сумма заказа? Или я могу одно манго купить, например? :))</p>
+          </div>
+          <div class="questions__item questions__answer">
+            <p>Ответ:</p>
+            <p>
+              Минимальная сумма заказа – 1 500 руб. Однако вы можете взять всего по чуть-чуть :) специально для этого мы
+              предлагаем экзотические фрукты поштучно или небольшими упаковками.</p>
+          </div>
+
+          <div class="questions__item questions__question">
+            <p>Вопрос:</p>
+            <p>
+              Можете порекомендовать какие-то конкретные фрукты из всего многообразия? </p>
+          </div>
+          <div class="questions__item questions__answer">
+            <p>Ответ:</p>
+            <p>
+              Наши любимчики: манго, личи, маракуйя, мангустин, папайя и кокос. Однако все без исключения тайские фрукты
+              заслуживают внимания! Поэтому заказывайте, пробуйте и определяйте своих фаворитов :)) </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" style="background-image: url(./img/bg_3.jpg);">
+      <div class="section-content">
+        <div class="contacts__content">
+          <h2 class="contacts__title">Хотите задать вопрос или сделать заказ ?</h2>
+          <p>Свяжитесь с нами по номеру:</p>
+          <a class="contacts__phone" href="tel:+7(968)5190561"><strong>+7 (968) 519 05 61</strong></a>
+          <div class="contacts__descr">(Telegram/WhatsApp)</div>
+          <div class="contacts__item">
+            <ul class="contacts__social-links social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path
+                      d="M47.761,24c0,13.121-10.639,23.76-23.76,23.76C10.878,47.76,0.239,37.121,0.239,24c0-13.123,10.639-23.76,23.762-23.76 C37.122,0.24,47.761,10.877,47.761,24 M35.259,28.999c-2.621-2.433-2.271-2.041,0.89-6.25c1.923-2.562,2.696-4.126,2.45-4.796 c-0.227-0.639-1.64-0.469-1.64-0.469l-4.71,0.029c0,0-0.351-0.048-0.609,0.106c-0.249,0.151-0.414,0.505-0.414,0.505 s-0.742,1.982-1.734,3.669c-2.094,3.559-2.935,3.747-3.277,3.524c-0.796-0.516-0.597-2.068-0.597-3.171 c0-3.449,0.522-4.887-1.02-5.259c-0.511-0.124-0.887-0.205-2.195-0.219c-1.678-0.016-3.101,0.007-3.904,0.398 c-0.536,0.263-0.949,0.847-0.697,0.88c0.31,0.041,1.016,0.192,1.388,0.699c0.484,0.656,0.464,2.131,0.464,2.131 s0.282,4.056-0.646,4.561c-0.632,0.347-1.503-0.36-3.37-3.588c-0.958-1.652-1.68-3.481-1.68-3.481s-0.14-0.344-0.392-0.527 c-0.299-0.222-0.722-0.298-0.722-0.298l-4.469,0.018c0,0-0.674-0.003-0.919,0.289c-0.219,0.259-0.018,0.752-0.018,0.752 s3.499,8.104,7.463,12.23c3.638,3.784,7.764,3.36,7.764,3.36h1.867c0,0,0.566,0.113,0.854-0.189 c0.265-0.288,0.256-0.646,0.256-0.646s-0.034-2.512,1.129-2.883c1.15-0.36,2.624,2.429,4.188,3.497 c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.281,32.451,37.763,31.321,35.259,28.999">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 30 30" xml:space="preserve">
+                    <desc>Instagram</desc>
+                    <path
+                      d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z">
+                    </path>
+                    <path
+                      d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z">
+                    </path>
+                    <path
+                      d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 60 60"
+                    xml:space="preserve">
+                    <desc>Telegram</desc>
+                    <path
+                      d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z">
+                    </path>
+                    <path d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="section-content">
+      <p><small>© Все права защищены. ООО "Фрукты жи есть".</small></p>
+      <p><small>Политика конфиденциальности</small></p>
+    </div>
+  </footer>
+
+  <!-- comment form modal -->
+  <div class="popup-wrapper popup-wrapper-comment">
+    <div class="popup-modal popup-modal-comment">
+      <div class="popup-modal__bg" style="background-image: url(./img/bg_4.jpg);"></div>
+      <div class="popup-modal__content">
+        <h2 class="popup-modal__title">Спасибо за ваш отзыв!</h2>
+        <p class="popup-modal__text">Для того, чтобы рассказать о своих впечатлениях или оставить предложение по
+          улучшению нашей работы, заполните поля ниже</p>
+        <form action="#" class="popup-modal__form" novalidate>
+          <input type="text" name="user-name" placeholder="Ваше имя*">
+          <input type="tel" name="user-phoeNumber" placeholder="Номер телефона*">
+          <textarea name="user-comment" placeholder="Ваш отзыв и ссылка на соц.сеть (по желанию)*"></textarea>
+          <button type="submit">оставить отзыв</button>
+        </form>
+        <p><small>*Мы отправим вам SMS с промо-кодом на скидку 7% к следующему заказу</small></p>
+      </div>
+      <div class="popup-close popup-close-comment">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- details form modal -->
+  <div class="popup-wrapper popup-wrapper-details">
+    <div class="popup-modal popup-modal-details">
+      <div class="popup-modal__bg" style="background: #ececec;"></div>
+      <div class="popup-modal__content">
+        <h2 class="popup-modal__title"></h2>
+        <p class="popup-modal__text popup-modal__text-descr"></p>
+        <p class="popup-modal__text popup-modal__text-compos"></p>
+      </div>
+      <div class="popup-close popup-close-details">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- cart form modal -->
+  <div class="popup-wrapper popup-wrapper-cart">
+    <div class="popup-modal popup-modal-cart">
+      <div class="popup-modal__content text-left">
+        <h2 class="popup-modal__title">Ваш заказ</h2>
+        <ul class="popup-modal__products products">
+          
+        </ul>
+        <div class="popup-modal__total">
+          <p>Минимальный заказ: 1 500 р.</p>
+          <p>Сумма: <span></span>&nbsp;p.</p>
+        </div>
+        <form action="#" class="popup-modal__form" novalidate>
+          <label for="cart-form-name">Ваше имя
+            <input id="cart-form-name" type="text" name="user-name">
+          </label>
+          <label for="cart-form-phone">Номер телефона
+            <input id="cart-form-phone" type="tel" name="user-phoeNumber">
+          </label>
+          <label for="cart-form-date">Дата доставки
+            <input type="date" name="user-date" id="cart-form-date">
+          </label>
+          <label for="cart-form-address">Адрес доставки
+            <input type="text" name="user-address" id="cart-form-address">
+          </label>
+          <div class="custom-radio__block">
+            <div class="custom-radio__title">Я заказываю фрукты:</div>
+            <div class="custom-radio__wrap">
+              <label class="custom-radio">
+                <input type="radio" name="question" value="Для себя">
+                <span></span>Для себя
+              </label>
+            </div>
+            <div class="custom-radio__wrap">
+              <label class="custom-radio">
+                <input type="radio" name="Question" value="В подарок">
+                <span></span>В подарок
+              </label>
+            </div>
+          </div>
+          <label for="cart-form-comment">Комментарий к заказу или промокод
+            <textarea id="cart-form-comment" name="user-comment"></textarea>
+          </label>
+          <div class="popup-modal__total-large">
+            <p>Минимальный заказ: 1 500 р.</p>
+            <p>Сумма: <span></span>&nbsp;p.</p>
+          </div>
+          <button class="order-submit" type="submit">Заказать</button>
+        </form>
+      </div>
+      <div class="popup-close popup-close-cart">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="cart-icon">
+    <div class="cart-icon__wrap">
+      <div class="cart-icon__bg">
+        <svg class="cart-icon__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <descr style="color:#bebebe;">Cart</descr>
+          <path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"></path>
+          <path fill="none" stroke-width="2" stroke-miterlimit="10"
+            d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"></path>
+        </svg>
+      </div>
+      <div class="cart-icon__total"></div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Aos Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Contentful -->
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+  <!-- main.js -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+
+
+</html>

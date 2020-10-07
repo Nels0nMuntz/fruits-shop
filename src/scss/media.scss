@@ -1,0 +1,305 @@
+@media (max-width: 1850px) {
+    /*       --------------------        header      ---------------------------         */
+    .header__content{
+        grid-template-columns: 25% 1fr auto;
+    }
+}
+@media (max-width: 1600px) {
+    /*       --------------------        header      ---------------------------         */
+    .header__content{
+        grid-template-columns: auto 1fr auto;
+    }
+}
+@media (max-width: 1010px) {
+    .header__content{
+        grid-template-columns: 1fr;
+    }
+    .header__content > *:not(.header__logo){
+        display: none;
+    }
+    .burger-icon{
+        display: initial;
+    }
+    .header__logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1199px){
+    /*       --------------------        weight  1199px      ---------------------------         */
+    .sets__item-descr{
+        font-size: 0.85rem;
+    }
+
+    /*     --------------------        how-to   1199px      ---------------------------       */
+    .how-to__item{
+        flex: 0 0 290px;
+    }
+
+    /*     --------------------        payment   1199px      ---------------------------       */
+    .payment__part{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 991px){
+    /*       --------------------        how-to  991px      ---------------------------         */
+    .how-to {
+        padding: 3rem  3rem 0rem;
+    }
+
+    /*       --------------------        leave-comment  991px      ---------------------------         */
+    .leave-comment__info{
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    /*       --------------------        sets   767px      ---------------------------         */
+    .sets__center {
+        grid-template-columns: 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 4rem;
+    }
+
+    /*       --------------------        section   767px      ---------------------------         */
+    .section-content {
+        padding: 2.5rem 0;
+    }
+
+    /*       --------------------        weight   767px      ---------------------------         */
+    .weight__center{
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    }
+    .weight__item{
+        text-align-last: center;
+    }
+
+    /*       --------------------        goods   767px      ---------------------------     */
+    .goods__item{
+        text-align: center;
+    }
+    .item-descr{
+        text-align: center;
+      }
+
+    /*       --------------------        leave-comment  767px      ---------------------------         */
+    .leave-comment{
+        flex-direction: column;
+    }
+    .leave-comment__info{
+        margin: 0 0 2rem 0;
+        text-align: center;
+    }
+
+    /*     --------------------        contacts  767px      ---------------------------       */
+    .contacts__content{
+        padding: 3rem 4rem;
+    }
+}
+
+@media (max-width: 575px) {
+    /*       --------------------        weight   575px      ---------------------------         */
+    .weight{
+        padding: 3rem 0 1rem;
+    }
+    .weight__center{
+        grid-template-columns: 100%;
+        margin-top: 2rem;
+        grid-row-gap: 2rem;
+    }
+    .item-sets__photo img{
+        height: 280px;
+    }
+    
+    /*       --------------------        payment   575px      ---------------------------         */
+    .item-payment__title{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    .item-payment__descr{
+        font-size: 1.2rem;
+    }
+    .item-payment__descr_details small{
+        font-size: 1rem;
+    }
+    .payment__item{ 
+        padding-left: 0;
+        margin-bottom: 2rem; 
+    }
+    .payment__item:nth-child(1n+1){
+        background: none;
+    }
+    .payment__img img{
+        width: 270px;
+    }
+
+    /*     --------------------          question 575px      ---------------------------       */
+    .questions__item{
+        width: 100%;
+        text-align: left;
+        padding: 1.5rem 1.5rem;
+        border-radius: 25px;
+        line-height: 1.5;
+        display: inline-block;
+        font-size: 1rem;
+    }
+
+    /*     --------------------        contacts  575px      ---------------------------       */
+    .contacts__content{
+        padding: 3rem 1rem;
+    }
+    .contacts__title{
+        font-size: 1.5rem;
+    }
+
+    /*     --------------------        popup  575px      ---------------------------       */
+    .products__info {
+        display: block;
+    }
+    .products__info > *{
+        padding: 0.2rem 0;
+    }
+    .products__title {
+        font-size: 1rem;
+    }
+    .products__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .products__count,
+    .products__price{
+        font-size: 1rem;
+    }
+    .popup-close {
+        transform: translate3d(0%, -50%, 0);
+        width: 35px;
+        height: 35px;
+    }
+    .popup-modal__total-large{
+        font-size: 1.4rem; 
+    }
+}
+
+@media (max-width: 450px) {
+    /*       --------------------        section   450px      ---------------------------         */
+    .section-title {
+        font-size: 1.7rem;
+    }
+    .section-descr {
+        padding-top: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+
+    /*       --------------------        banner   450px      ---------------------------         */
+    .banner__tile{
+        font-size: 2rem;
+    }
+    .banner__descr{
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+    }
+
+    /*       --------------------        sets   450px      ---------------------------         */
+    .item-button a{
+        display: block;
+    }
+    .item-button a:last-child{
+        margin: 1rem 0 0 0;
+    }
+
+    /*     --------------------        goods   450px      ---------------------------     */
+    .information__order-bg {
+        padding: 15px;
+    }
+    .goods__center-oil {
+        grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    }
+
+    /*     --------------------        information   450px      ---------------------------     */
+    .information__promise{
+        font-size: 1.5rem;
+    }
+
+    /*     --------------------        goods   450px      ---------------------------     */
+    .how-to{
+        padding: 3rem 0rem 1rem;
+    }
+
+    /*     --------------------        modal   450px      ---------------------------     */
+    .popup-modal__content{
+        padding: 1rem;
+    }
+    .products__img img {
+        width: 75px;
+    }
+    .popup-modal__total-amoun{
+        font-size: 1.2rem; 
+    }
+
+    /*     --------------------        comments   450px      ---------------------------     */
+    .comments__item {
+        flex: 0 0 300px;
+    }
+
+    /*     --------------------        cart   450px      ---------------------------     */
+    .cart-icon{
+        right: 15px;
+    }
+    .cart-icon__bg{
+        height: 70px;
+        width: 70px;
+    }
+    .cart-icon__bg svg{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    /*       --------------------        header   400px      ---------------------------         */
+    .header__content{
+        height: 4rem; 
+    }
+    .header__logo img{
+        height: 50px;
+    }
+
+    /*       --------------------        header   400px      ---------------------------         */
+    .banner{
+        height: calc(100vh - 4rem);
+    }
+
+    /*       --------------------        sets   400px      ---------------------------         */
+    .sets__center {
+        grid-row-gap: 2rem;
+    }
+    .item-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-buttons a{
+        margin: 0.3rem 0;
+        width: 150px;
+    }
+
+    /*       --------------------        cart   400px      ---------------------------         */
+    .cart-icon{
+        top: 4.5rem;
+    }
+
+    /*       --------------------        popup   400px      ---------------------------         */
+    .popup-wrapper-details{
+
+        .popup-modal__img img {
+            width: 300px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.comments__title{
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+.comments__list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.comments__item{
+    flex: 0 0 340px;
+    margin-bottom: 2.5rem;
+}
+.comments__item > *{
+    margin-bottom: 1rem;
+}
+.comments__photo img{
+    border-radius: 50%;
+}
+.comments__author{
+    font-size: 1.5rem; 
+    font-weight: 700;
+}
+.comments__content{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.comments__subtitle{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.comments__links{
+    display: flex;
+    justify-content: center;
+}
+.comments__social-link{
+    margin: 0 0.5rem;
+}

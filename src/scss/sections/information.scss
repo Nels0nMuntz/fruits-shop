@@ -1,0 +1,48 @@
+.information{
+    margin-bottom: 3rem;
+}
+.information__order-bg{
+    width: 100%;
+    max-width: 650px;
+    background: #EBEBEB;
+    padding: 30px 25px;
+    margin: 0 auto;
+    display: flex;
+}
+.information__icon-arrow{
+    margin-right: 1rem;
+}
+.information__order{
+    font-family: Futura PT Book;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.7;
+}
+.information__order span{
+    font-family: FuturaPT-Demi;
+    font-weight: 600;
+}
+
+.information__promise{
+    padding-top: 5rem;
+    font-family: Futura PT Book;
+    font-size: 2rem;
+}
+.line-top{
+    position: relative;
+}
+.uptitle{
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    font-size: 1.2rem;
+    color: $text-white;
+    background-color: $text-main;
+    padding: 0.4rem 3rem;
+}
+.promise__text{
+    padding: 2.5rem 0;
+}
+.information__promise hr{
+    background: #000;
+    height: 1px;
+}

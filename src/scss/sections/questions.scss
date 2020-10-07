@@ -1,0 +1,33 @@
+.questions{
+    padding: 3rem 1rem 0;
+    text-align: center;
+}
+.questions-container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.questions__item{
+    width: 100%;
+    text-align: left;
+    padding: 1.5rem 2.5rem;
+    border-radius: 30px;
+    line-height: 1.5;
+    display: flex;
+    font-size: 1.2rem;
+}
+.questions__item p:first-child{
+    margin-right: 3rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.questions__question{    
+    color: $text-white;    
+    background-color: $main-btn;
+    margin-bottom: 1.5rem;
+}
+.questions__answer{
+    color: $text-main;    
+    background-color: $text-gray-light;
+    margin-bottom: 2.5rem;
+}

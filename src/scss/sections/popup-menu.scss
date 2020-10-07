@@ -1,0 +1,23 @@
+.popup-menu{
+    width: 100%;
+    background-color: $text-white;
+    padding: 7rem 0 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-100%);
+    opacity: 0.1;
+    transition: all 0.5s ease-out;
+}
+.popup-menu.active{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.popup-menu__item{
+    padding: 0.3rem 0;
+}
+.popup-menu__section{
+    text-align: center;
+    padding: 1rem;
+}

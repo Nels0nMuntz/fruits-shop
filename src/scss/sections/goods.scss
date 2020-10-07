@@ -1,0 +1,23 @@
+.goods__center{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 5rem;
+    margin-top: 2rem;
+}
+.goods__center-oil{
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
+.item-sets__photo{
+    text-align: center;
+}
+.item-sets__photo img{
+    height: 250px;
+}
+.item-sets__photo-oil img{
+    height: 350px;
+}
+
+.goods__item{
+    text-align: left;
+}

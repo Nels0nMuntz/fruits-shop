@@ -1,0 +1,47 @@
+.how-to{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $text-white;
+    padding: 8rem 3rem 5rem;
+}
+.how-to .section-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.how-to__title{
+    font-size: 2.4rem;
+    font-family: FuturaPT-Demi;
+}
+.how-to__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.how-to__list{
+    margin-top: 4rem;
+}
+.how-to__item{
+    flex: 0 0 24%;
+    text-align: center;
+    padding: 0 1rem 2rem;
+    font-family: FuturaPT;
+}
+.how-to__img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+.how-to__subtitle{
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.how-to__text{
+    font-size: 1.3rem;
+    font-weight: 300;
+}

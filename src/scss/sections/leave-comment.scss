@@ -1,0 +1,29 @@
+.leave-comment{
+    background-color: $main-btn;
+    padding: 3rem 0;
+    color: $text-white;
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leave-comment__info{
+    margin-right: 10rem;
+    text-align: left;
+}
+.leave-comment__info p:last-child{
+    font-weight: 700;
+}
+.leave-comment__btn{
+    text-transform: uppercase;
+    color: $text-main;
+    padding: 1rem 3rem;
+    background-color: $text-white;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: color 0.15s linear;
+}
+.leave-comment__btn:hover{
+    color: $main-btn;
+}

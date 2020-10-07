@@ -1,0 +1,114 @@
+{
+    "sets": [
+        {
+            "id": "1",
+            "fields": {
+                "title": "Большая коробка",
+                "descr": "16 видов фруктов, 6,5 кг",
+                "price": "7 290 руб.",
+                "image": "img/Pack_3.jpg"
+            }
+        },
+        {
+            "id": "2",
+            "fields": {
+                "title": "Средняя коробка",
+                "descr": "11 видов фруктов, 5 кг",
+                "price": "4 690 руб.",
+                "image": "img/Pack_2.jpg"
+            }
+        },
+        {
+            "id": "3",
+            "fields": {
+                "title": "Маленькая коробка",
+                "descr": "8 видов фруктов, 3 кг",
+                "price": "3 690 руб.",
+                "image": "img/Pack_1.jpg"
+            }
+        },
+        {
+            "id": "3",
+            "fields": {
+                "title": "Офисная коробка",
+                "descr": "6 видов фруктов, 1,5 кг",
+                "price": "2000 руб.",
+                "image": "img/Pack_4.jpg"
+            }
+        }
+    ],
+    "fruits": [
+        {
+            "id": "1",
+            "fields": {
+                "title": "Манго желтое",
+                "descr": {
+                    "country": "Тайланд",
+                    "weight": "300-400 г."
+                },
+                "price": "420 руб./шт.",
+                "image": "img/weight/yellow_mango.jpg"
+            }
+        },
+        {
+            "id": "2",
+            "fields": {
+                "title": "Питахайа (фрукт дракона)",
+                "descr": {
+                    "country": "Тайланд",
+                    "weight": "340-500 г."
+                },
+                "price": "440 руб./шт.",
+                "image": "img/weight/Dragon.jpg"
+            }
+        },
+        {
+            "id": "3",
+            "fields": {
+                "title": "Мангостин",
+                "descr": {
+                    "country": "Тайланд",
+                    "weight": "50-90 г."
+                },
+                "price": "465 руб./250г.",
+                "image": "img/weight/Mangostine.jpg"
+            }
+        },
+        {
+            "id": "4",
+            "fields": {
+                "title": "Папайя",
+                "descr": {
+                    "country": "Тайланд",
+                    "weight": "950-1200 г."
+                },
+                "price": "1 305 руб./шт.",
+                "image": "img/weight/Papaya.jpg"
+            }
+        },
+        {
+            "id": "5",
+            "fields": {
+                "title": "Кокос молодо",
+                "descr": {
+                    "country": "Тайланд",
+                    "weight": "200-350 г."
+                },
+                "price": "790 руб./шт.",
+                "image": "img/weight/Coconut.jpg"
+            }
+        },
+        {
+            "id": "6",
+            "fields": {
+                "title": "Манго зеленое",
+                "descr": {
+                    "country": "Тайланд",
+                    "weight": "200-350 г."
+                },
+                "price": "790 руб./шт.",
+                "image": "img/weight/Coconut.jpg"
+            }
+        }
+    ]
+}

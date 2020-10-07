@@ -1,0 +1,281 @@
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: opacity ease-in-out 0.3s;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    opacity: 0;
+}
+.popup-wrapper.open {
+    opacity: 1;
+    z-index: 60;
+}
+.popup-modal {
+    margin: 65px auto;
+    top: 0;
+    position: relative;
+    left: auto;
+    right: auto;
+    width: 100%;
+    max-width: 560px;
+    background-color: $text-white;
+    transform: translateY(30%) scale(0.9);
+    transition: transform ease-in-out 0.3s;
+}
+.popup-wrapper.open .popup-modal {
+    opacity: 1;
+    transform: translateY(0);
+}
+.popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    transform: translate3d(40%, -40%, 0);
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+}
+.popup-close i {
+    color: #000;
+    font-size: 20px;
+}
+
+.popup-modal__bg {
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.popup-modal__content {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.popup-modal__content > *:not(.products) {
+    padding: 1rem 0;
+}
+// .popup-modal__content p:last-child{
+//     padding: 0 2rem;
+// }
+
+.popup-modal__form {
+    input,
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 35px;
+        margin: 0.8rem 0;
+        font-family: Futura PT Book;
+        font-size: 1.1rem;
+        &:focus::placeholder {
+            color: transparent;
+        }
+        &.with_error {
+            background-color: rgba($color: tomato, $alpha: 0.5);
+            box-shadow: 0 0 10px 3px rgba(255, 0, 0, 0.3);
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    }
+    textarea {
+        height: 8rem;
+        resize: none;
+    }
+    button {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 35px;
+        background-color: $text-main;
+        color: $text-white;
+        text-transform: uppercase;
+        font-family: Futura PT Book;
+        font-size: 1rem;
+    }
+}
+
+/*  cart form modal  */
+
+.text-left {
+    text-align: left;
+}
+
+.products {
+    border-top: 1px solid $text-gray;
+    border-bottom: 1px solid $text-gray;
+    svg {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+}
+.products__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.15s ease-in-out;
+}
+.products__item svg{
+    opacity: 0.6;
+    transition: opacity 0.15s ease-in-out;
+}
+.products__item:hover svg{
+    opacity: 1;
+}
+.products__img img {
+    width: 90px;
+    margin-right: 1rem;
+}
+.products__info {
+    display: grid;
+    grid-template-columns: 1fr 190px;
+}
+.products__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.products__count {
+    font-weight: 300;
+    margin: 0 0.5rem;
+}
+.products__price {
+    font-weight: 300;
+}
+.products__remove {
+    text-align: right;
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.popup-modal__total {
+    text-align: right;
+}
+.popup-modal__total-large{
+    text-align: right;
+    font-size: 1.6rem; 
+    margin: 1.5rem 0;
+}
+.popup-modal__total p:first-child.hide,
+.popup-modal__total-large p:first-child.hide{
+    display: none;
+}
+
+.popup-wrapper-cart {
+    input,
+    textarea {
+        margin: 0.5rem 0 1rem 0;
+    }
+    label {
+        font-family: Futura PT Book;
+        font-size: 1.05rem;
+    }
+}
+
+.custom-radio__block {
+    margin-bottom: 1rem;
+}
+.custom-radio__title {
+    font-family: Futura PT Book;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+.custom-radio__wrap {
+    margin: 0.3rem;
+}
+.custom-radio > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-radio > span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: opacity 0.2s linear;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.custom-radio > span::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+/* стили при наведении курсора на радио */
+.custom-radio > input:not(:disabled):not(:checked) + span:hover {
+    opacity: 1;
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio > input:checked + span {
+    opacity: 1;
+    &::before {
+        opacity: 1;
+    }
+}
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio > input:focus + span::before {
+    opacity: 1;
+}
+
+.popup-wrapper-cart button {
+    background-color: $main-btn;
+}
+
+
+/*  popup-wrapper-details  */
+.popup-wrapper-details{
+
+    .popup-modal__bg {
+        height: auto;
+        padding: 3rem 0;
+        text-align: center;
+    }
+    .popup-modal__bg img{
+        max-width: 360px;
+    }
+    .popup-modal__content>* {
+        padding: 0.7rem 0;
+    }
+    .popup-modal__content p:last-child{
+        margin-top: 1rem;
+    }
+    .main-btn{
+        padding: 0.75rem 3rem;
+        font-weight: normal;
+    }
+
+}

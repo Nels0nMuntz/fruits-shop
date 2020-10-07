@@ -1,0 +1,10 @@
+.footer{
+    text-align: center;
+    background-color: rgba($color: $footer-bg, $alpha: 0.93);
+}
+.footer p:first-child{
+    color: $text-white;
+}
+.footer p:last-child{
+    color: $main-btn;
+}
