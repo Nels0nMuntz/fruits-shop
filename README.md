@@ -1,7 +1,7 @@
 # fruits-shop
 Online store project
 
-Follow the link `https://fruits-shop2020.netlify.app` to see demo version of the project.
+Follow the link https://fruits-shop2020.netlify.app to see demo version of the project.
 
 
 ## Download and installation
